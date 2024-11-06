@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Keha stiil */
+body {
+    font-family: Arial, sans-serif; /* Muuda oma eelistatud fondiks */
+    line-height: 1.6; /* Parandab loetavust */
+    background-color: #f4f4f4; /* Helehall taust */
+    color: #333; /* Tumedam teksti värv */
+}
+
+/* Pealkirjade stiilid */
+h1, h2, h3 {
+    margin-bottom: 20px; /* Tühik pealkirjade all */
+    color: #2c3e50;
+}
+
+/* Tabeli stiilid */
+table {
+    width: 100%; /* Kogu laiuses */
+    border-collapse: collapse; /* Äärte ühendamine */
+    margin: 20px 0; /* Tühik tabeli ümber */
+}
+
+/* Märgendatud nimekiri */
+ul {
+    list-style-type: disc; /* Vaikimisi täppidega punktid */
+    margin: 10px 0; /* Tühik nimekirja ümber */
+    padding-left: 20px; /* Nimekirja taandejoon */
+}
+
+/* Järjestatud nimekiri */
+ol {
+    margin: 10px 0; /* Tühik nimekirja ümber */
+    padding-left: 20px; /* Nimekirja taandejoon */
+}
+
+/* Lingistiilid */
+a {
+    color: #3498db; /* Lingivärv */
+    text-decoration: none; /* Eemaldab allajoonimise */
+}
+
+a:hover {
+    text-decoration: underline; /* Allajoonimine hover'il */
+}
+
+/* Tabeli päis ja lahtrid */
+th, td {
+    border: 1px solid #ddd; /* Helehall ääris */
+    padding: 8px; /* Tühik lahtrite sees */
+    text-align: left; /* Teksti vasakjoondus */
+}
+
+th {
+    background-color: #2c3e50; /* Tumedam päise taust */
+    color: white; /* Valge teksti värv päises */
+}
+
+/* Kaheveeruline paigutus */
+.two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.column {
+    width: 48%;
+}
