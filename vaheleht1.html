@@ -3,18 +3,84 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
-<title>Vaheleht 1</title>
+<title>TÜ raamatukogu</title>
 </head>
 <body>
 
-<h1>M(ega) H(ea) veebi(L)eht</h1>
-
-<div class="nupud">
-<button type="button" onclick="window.location.href = 'pealeht.html';">Tagasi pealehele</button>
+<div class="header raamatukogu">
+    <h1>Tartu Ülikooli Raamatukogu</h1>  
 </div>
-<div class="nupud">
-<button type="button" onclick="window.location.href = 'vaheleht2.html';">2. vaheleht</button>
+<div class="diag"></div>
+
+<div class="topnav">
+    <a href="pealeht.html">Pealeht</a>
+    <a href="liikumine.html">Liikumine</a>
+    <a href="https://utlib.ut.ee/" style="float:right">Raamatukogu kodulehele</a>
 </div>
 
+<div class="row">
+    <div class="column left">
+        <!-- kunagi ma saan javascriptiga mapsi lisamisest jagu, täna ei ole see päev -->
+        <div class="card">
+            <div class="fakekaart" style="height:200px;">GOOGLE MAPS KAART SIIA</div>
+        </div>
+        <div class="card">
+            <h3>Lahtiolekuajad</h3>
+            <ul>
+                <li>E-R 9-21</li>
+                <li>L-P 12-18</li>
+                <li>Sessi ajal 24/7</li>
+            </ul>
+        </div>
+    </div>
+    <div class="column middle">
+        <div class="card">
+            <h2>TÜ raamatukogu võimalused</h2>
+        </div>
+        <!-- teen nupuks hiljem maybe -->
+        <div class="card">
+            <h3><a href="https://utlib.ut.ee/lugejaks-registreerimine">Lugejaks registreerimine</a></h3>
+        </div>
+        <div class="card">
+            <h3>Pikendamine ja viivised</h3>
+            <ul>
+                <li>Laenutusaega saab pikendada kuni 10 korda</li>
+                <li>Pikendada ei saa, kui: kui laenutähtaeg on ületanud 30 päeva, kui teavikule on järjekord või kui teavik on laenutatav 24ks tunniks</li>
+                <li>Pikendada/laenutada ei saa, kui on võlgnevus üle 2 euro</li>
+                <li>Viivise määr: 10 senti/päev, 24 tunniks laenutatavate teoste puhul 10 senti/tund</li>   
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Õpikeskkond</h3>
+            <p>Lisaks mitmetele saalidele on raamatukogus võimalik broneerida rühmatööruume ja üürida individuaaltööruume.</p>
+            <h3>Rühmatööruumid</h3>
+            <ul>
+                <li>TÜ raamatukogus on 13 rühmatööruumi</li>
+                <li>Broneerimine: <a href="https://ruumid.utlib.ut.ee/">https://ruumid.utlib.ut.ee/</a></li>
+            </ul>
+            <h3>Individuaaltööruumid</h3>
+            <ul>
+                <li>Hinnakiri: <a href="https://utlib.ut.ee/teenuste-hinnad">https://utlib.ut.ee/teenuste-hinnad</a>https://utlib.ut.ee/teenuste-hinnad</li>
+            </ul>
+        </div>
+    </div>
+    <div class="column right">
+        <div class="card">
+        <h3>Lähedalasuvad toidukohad</h3>
+        <h4>Kohvik Gaudeamus</h4>
+        <ul>
+            <li>Asub raamatukogu hoones</li>
+            <li>Avatud E-R 9-20, L 12-18</li>
+            <li> <a href="https://päevapakkumised.ee/tartu/gaudeamus-kohvik">Päevapakkumised</a> </li>
+        </ul>
+        <h4>Kvartal, Tasku, Kaubamaja</h4>
+        <ul>
+            <li>500-600 meetri kaugusel</li>
+            <li>Lai valik toidukohti ja -poode</li>
+        </ul>
+
+        </div>
+    </div>
+</div>
 
 </body>
