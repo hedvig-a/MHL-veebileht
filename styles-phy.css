@@ -27,8 +27,8 @@ body {
 }
 
 .blue-box {
-    background: #2c5696;
-    width: 40%;
+    background: #0057a7;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center; /* Centers the logo horizontally */
@@ -36,9 +36,19 @@ body {
 }
 
 .logo {
-    max-height: 60%;   /* Limits the logo size to 80% of the box height */
-    max-width: 60%;    /* Limits the logo size to 80% of the box width */
+    max-height: 104px;   
+    max-width: 104px;    
 }
+
+.picture {
+    border: 2px solid #ddd; /* Adds a subtle border */
+    border-radius: 8px; /* Softens edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+    display: block; /* Ensures images behave predictably within layout flow */
+    max-width: 60%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0 auto; /* Centers the image within a container */
+  }
 
 .header-content {
     display: flex;
@@ -205,4 +215,9 @@ p {
 .centered-image {
     max-width: 80%;           /* Prevents the image from getting too large */
     height: auto;             /* Maintains aspect ratio */
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
