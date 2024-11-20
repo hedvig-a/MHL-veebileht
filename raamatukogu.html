@@ -2,7 +2,9 @@
 <html lang="ee">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLfYgr6xOCIIi0uf2m_4YQu5O8zjzfd8&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+<link rel="stylesheet" type="text/css" href="stylermtk.css">
 <title>TÜ raamatukogu</title>
 </head>
 <body>
@@ -20,9 +22,10 @@
 
 <div class="row">
     <div class="column left">
-        <!-- kunagi ma saan javascriptiga mapsi lisamisest jagu, täna ei ole see päev -->
         <div class="card">
-            <div class="fakekaart" style="height:200px;">GOOGLE MAPS KAART SIIA</div>
+            <gmp-map center="58.3769645690918,26.72127342224121" zoom="14" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="58.3769645690918,26.72127342224121" title="My location"></gmp-advanced-marker>
+            </gmp-map>
         </div>
         <div class="card">
             <h3>Lahtiolekuajad</h3>
@@ -37,7 +40,6 @@
         <div class="card">
             <h2>TÜ raamatukogu võimalused</h2>
         </div>
-        <!-- teen nupuks hiljem maybe -->
         <div class="card">
             <h3><a href="https://utlib.ut.ee/lugejaks-registreerimine">Lugejaks registreerimine</a></h3>
         </div>
