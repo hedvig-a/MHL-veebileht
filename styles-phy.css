@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Keha stiil */
+body {
+    font-family: Arial, sans-serif; /* Muuda oma eelistatud fondiks */
+    line-height: 1.6; /* Parandab loetavust */
+    background-color: #f4f4f4; /* Helehall taust */
+    color: #333; /* Tumedam teksti värv */
+}
+
+.header {
+    background-color: #0057a7;
+    text-align: left;
+    padding: 20px;
+  }
+  .header.phy {
+    background-color: #0057a7;
+    background-image: url(füüsikum.jpg);
+    background-size: cover; /* Ensures the image covers the area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: left;
+    padding: 20px;
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align it to the top */
+    left: 0;
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000; /* Keep it above other elements */
+  }
+  .header h1, .header.phy h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff
+  }
+  
+  .diag {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-right: 50vw solid transparent; /* Creates the diagonal effect */
+    border-bottom: 13.9vw solid #0057a7; /* Matches the header's background color */
+    z-index: 999; /* Keep it below header content but above other elements */
+    margin: -13.9vw;
+  }
+
+  .diag-title {
+    position: fixed; /* Position over the diagonal */
+    top: 12px; /* Adjust vertical alignment */
+    left: 10px; /* Adjust horizontal alignment */
+    color: white; /* Ensure readability */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem; /* Adjust size as needed */
+    z-index: 1001; /* Higher than .diag and .header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional shadow for better contrast */
+  }
+  .topnav {
+    position: fixed; /* Fix the navigation bar below the header */
+    top: 80px; /* Adjust this value based on the height of your header */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1001; /* Ensure it stays above other elements but below the header */
+    overflow: hidden;
+    background-color: #161c46;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+  }
+  /* lingid hoverimisel */
+  .topnav a:hover {
+    background-color: #878dbe;
+    color: black;
+  } 
+
+.picture {
+    border: 2px solid #ddd; /* Adds a subtle border */
+    border-radius: 8px; /* Softens edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+    display: block; /* Ensures images behave predictably within layout flow */
+    max-width: 60%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0 auto; /* Centers the image within a container */
+  }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the navbar to the left */
+    flex: 1;
+    padding: 0 10px;
+}
+
+
+/* Pealkirjade stiilid */
+h1, h3 {
+    margin-bottom: 20px; /* Tühik pealkirjade all */
+    color: #ffffff;
+}
+
+/* Tabeli stiilid */
+table {
+    width: 100%; /* Kogu laiuses */
+    border-collapse: collapse; /* Äärte ühendamine */
+    margin: 20px 0; /* Tühik tabeli ümber */
+}
+
+/* Märgendatud nimekiri */
+ul {
+    list-style-type: disc; /* Vaikimisi täppidega punktid */
+    margin: 10px 0; /* Tühik nimekirja ümber */
+    padding-left: 20px; /* Nimekirja taandejoon */
+}
+
+/* Järjestatud nimekiri */
+ol {
+    margin: 10px 0; /* Tühik nimekirja ümber */
+    padding-left: 20px; /* Nimekirja taandejoon */
+}
+
+/* Lingistiilid */
+a {
+    color: #3498db; /* Lingivärv */
+    text-decoration: none; /* Eemaldab allajoonimise */
+}
+
+a:hover {
+    text-decoration: underline; /* Allajoonimine hover'il */
+}
+
+/* Tabeli päis ja lahtrid */
+th, td {
+    border: 1px solid #ddd; /* Helehall ääris */
+    padding: 8px; /* Tühik lahtrite sees */
+    text-align: left; /* Teksti vasakjoondus */
+}
+
+th {
+    background-color: #2c3e50; /* Tumedam päise taust */
+    color: white; /* Valge teksti värv päises */
+}
+
+/* Kaheveeruline paigutus */
+.two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.column {
+    width: 48%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;            /* Fixes the sidebar in place */
+    top: 130px;                  /* Sidebar starts below the header */
+    left: 0;
+    width: 200px;               /* Set the width of the sidebar */
+    height: calc(100vh - 130px); /* Full height minus the header */
+    background-color: #333;     /* Dark background color */
+    padding-top: 20px;          /* Space from the top */
+    color: white;               /* Text color */
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;      /* Vertically center the text */
+    justify-content: center;  /* Horizontally center the text */
+    padding: 10px;
+    height: 50px;             /* Fixed height for each item */
+    border-bottom: 1px solid #444; /* Optional: border between links */
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;              /* Make the link fill the entire list item */
+    text-align: center;       /* Center the text horizontally */
+    line-height: 30px;        /* Ensures vertical alignment */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757; /* Highlight link on hover */
+}
+
+.sidebar ul li a:hover {
+    cursor: pointer;         /* Optional: Add a cursor pointer on hover for interactivity */
+}
+
+/* Main content styling */
+main {
+    margin-left: 220px;         /* Make space for the sidebar */
+    padding: 20px;
+    padding-top: 156px;         /* Push content below the header */
+    overflow: auto;             /* Content can scroll */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;  /* Smooth scrolling when clicking anchor links */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin-bottom: 130px;       /* Space between sections */
+    background-color: #f4f4f4; /* Light gray background for sections */
+    border-radius: 8px;        /* Rounded corners */
+    position: relative;
+    padding-top: 150px; /* Matches the height of your fixed header */
+    margin-top: -150px; /* Negative margin offsets the fixed header */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Image styling */
+.centered-image {
+    max-width: 80%;           /* Prevents the image from getting too large */
+    height: auto;             /* Maintains aspect ratio */
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}

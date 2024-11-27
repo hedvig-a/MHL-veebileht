@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Füüsikum">
+    <title>Füüsikum</title>
+    <link rel="stylesheet" type="text/css" href="styles-phy.css"> <!-- CSS file -->
+
+    <!-- Google Maps API -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvOxcaH_HdEC9LT1kAdP9BTcLNklC1bY&callback=initMap">
+    </script>
+
+
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#Füüsikumist">Füüsikumist</a></li>
+            <li><a href="#Asukoht">Asukoht</a></li>
+            <li><a href="#Söögikohad">Söögikohad</a></li>
+            <li><a href="#?">?</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Content -->
+ 
+
+
+    <div class="header phy">
+        <h1>Tartu Ülikooli Füüsikum</h1>  
+        
+        <div class="diag"></div>
+        <div class="diag-title"><h1>Tartu Ülikooli Füüsikum</h1> </div>
+    </div>
+        
+        <div class="topnav">
+            <a href="pealeht.html">Pealeht</a>
+            <a href="delta.html">Delta</a>
+            <a href="raamatukogu.html">Raamatukogu</a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <img src="https://vatson.ee/50edulugu/wp-content/uploads/2017/07/tartu-fyysikum-1.jpg" alt="Füüsikum" class="picture">
+        <section id="Füüsikumist">
+            <h2>Füüsikumist</h2>
+            <p>Kaasaegne õppehoone Maarjaväljal. Avati 25. augustil 2014. Hoone on koduks füüsika instituudile. Sisaldab rohkelt laboreid. Instituudi põhiülesanne on õppe- ning teadus- ja arendustöö tegemine ning ühiskonnale vajalike teenuste osutamine füüsikas, materjaliteaduses ja nende siduserialadel. </p>
+                <p>Direktoriks on plasmafüüsika ja arvutitehnika kaasprofessor Toomas Plank. </p>
+        </section>
+
+        <section id="Asukoht">
+            <h2>Asukoht</h2>
+            <div id="map"></div>
+        </section>
+
+        <section id="Söögikohad">
+            <h2>Söögikohad</h2>
+            <p><a href="https://xn--pevapakkumised-5hb.ee/tartu/dunord-nooruse-1-t%C3%BC-tehnoloogiainstituudis" target="_blank">Dunord</a>, Nooruse tänav 1</p>
+            <p>Coop, Ravila tänav 14d</p>
+        </section>
+
+        <section id="?">
+            <h2>Bussipeatused läheduses</h2>
+            <p>*info*</p>
+        </section>
+    </main>
+
+
+    <script>
+        function initMap() {
+            const location = { lat: 58.3663, lng: 26.6908 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: location,
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "My location",
+            });
+        }
+    </script>
+</body>
+</html>
