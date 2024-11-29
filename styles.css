@@ -11,12 +11,12 @@ body {
   height: 100%;
 }
   .header {
-    background-color: #878dbe;
+    background-color: #0057a7;
     text-align: left;
     padding: 20px;
   }
   .header.delta {
-    background-color: #878dbe;
+    background-color: #0057a7;
     background-image: url(delta.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -33,7 +33,7 @@ body {
     width: 0;
     height: 0;
     border-right: 50vw solid transparent;
-    border-bottom: 13.9vw solid #878dbe;
+    border-bottom: 13.9vw solid #0057a7;
     margin-top: -13.9vw;
   }
   
@@ -119,14 +119,14 @@ body.rmtk {
   
   /*headeri sätestamine*/
   .header {
-    background-color: #878dbe;
+    background-color: #0057a7;
     text-align: left;
     padding: 20px;
     margin-top: 0%;
   }
   
   .header.raamatukogu {
-    background-color: #878dbe;
+    background-color: #0057a7;
     background-image: url(raamatukogu.jpg);
     background-repeat: no-repeat;
     background-position: right;
@@ -136,7 +136,7 @@ body.rmtk {
   }
   
   .header.pealeht {
-    background-color: #878dbe;
+    background-color: #0057a7;
     background-image: url(peahoone.jpg);
     background-repeat: no-repeat;
     background-position: right;
@@ -154,7 +154,7 @@ body.rmtk {
     width: 0;
     height: 0;
     border-right: 50vw solid transparent;
-    border-bottom: 13.9vw solid #878dbe;
+    border-bottom: 13.9vw solid #0057a7;
     margin-top: -13.9vw;
   }
   
@@ -181,22 +181,22 @@ body.rmtk {
   } 
   
   /* veerud */
-   .columnrmtk.left {
+   .column.left {
     float: left;
     width: 30%;
     border: black;
   }
   
-  .columnrmtk.middle {
+  .column.middle {
     float: left;
     width: 45%;
     margin-left: 20px;
   }
   
-  .columnrmtk.middle h2 {
+  .column.middle h2 {
     text-align: center;
   }
-  .columnrmtk.right{
+  .column.right{
     float: left;
     width: 20%;
     margin-left: 20px;
@@ -229,7 +229,7 @@ body.rmtk {
     width: 100%;
   }
   
-  .rowrmtk:after {
+  .row:after {
     content: "";
     display: table;
     clear: both;
