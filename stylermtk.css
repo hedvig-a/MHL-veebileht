@@ -3,24 +3,40 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*Kaardi suurus*/
 gmp-map {
   height: 200px;
 }
 
+/*headeri sätestamine*/
 .header {
   background-color: #878dbe;
   text-align: left;
   padding: 20px;
+  margin-top: 0%;
 }
+
 .header.raamatukogu {
   background-color: #878dbe;
   background-image: url(raamatukogu.jpg);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 100%;
   text-align: left;
   padding: 20px;
 }
-.header h1, .header.raamatukogu h1 {
+
+.header.pealeht {
+  background-color: #878dbe;
+  background-image: url(peahoone.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+  text-align: left
+}
+
+
+.header h1, .header.raamatukogu h1, .header.pealeht h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color:#ffffff
 }
@@ -33,6 +49,7 @@ gmp-map {
   margin-top: -13.9vw;
 }
 
+/*ülemise riba nupud */
  .topnav {
   overflow: hidden;
   background-color: #161c46;
@@ -60,12 +77,6 @@ gmp-map {
   width: 30%;
   border: black;
 }
-.fakekaart {
-  background-color: #210447;
-  width: auto;
-  padding: 20px;
-  color: #ffffff;
-}
 
 .column.middle {
   float: left;
@@ -82,6 +93,7 @@ gmp-map {
   margin-left: 20px;
 }
 
+/*kastid*/
 .card{
   background-color: #878dbe;
   padding: 10px;
@@ -96,6 +108,9 @@ gmp-map {
   font-size: 17px;
 }
 
+.card img{
+  width: 100%;
+}
 
 .row:after {
   content: "";
@@ -103,7 +118,7 @@ gmp-map {
   clear: both;
 }
 
-/* ekraani vähendamisel veerud üksteise alla */
+/* ekraani vähendamisel veerud üksteise alla, abi w3school.com-ist*/
 @media screen and (max-width: 800px) {
   .column.left, .column.middle, .column.right {   
     width: 100%;
