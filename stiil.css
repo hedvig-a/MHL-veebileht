@@ -35,14 +35,6 @@ h2 {
 }
 
 
-.section:nth-child(5) {
-  margin-top: 0; /* Moves to the top */
-  border: none; /* No border */
-  max-width: 100%; /* Stretches full width */
-  background-color: transparent; /* Removes background color */
-}
-
-
 ul {
   list-style-type: disc;
   padding-left: 20px;
