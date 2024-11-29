@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mega hea veebileht</title>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLfYgr6xOCIIi0uf2m_4YQu5O8zjzfd8&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     <link rel="stylesheet" type="text/css" href="stiil.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
@@ -62,6 +64,12 @@
             <li>Aadress: Narva mnt 18, 50090, Tartu</li>
             <li>Lahtiolekuajad: tööpäeviti 07.30–20.00</li>
         </ul>
+    </div>
+
+    <div class="section">
+        <gmp-map center="58.385398864746094,26.724746704101562" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="58.385398864746094,26.724746704101562" title="My location"></gmp-advanced-marker>
+        </gmp-map>
     </div>
 
 </body>
