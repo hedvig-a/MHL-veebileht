@@ -1,0 +1,467 @@
+
+body {
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+.section.delta gmp-map {
+  height: 100%;
+}
+  .header {
+    background-color: #878dbe;
+    text-align: left;
+    padding: 20px;
+  }
+  .header.delta {
+    background-color: #878dbe;
+    background-image: url(delta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-align: left;
+    padding: 20px;
+  }
+  .header h1, .header.delta h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff
+  }
+  
+  .diag {
+    width: 0;
+    height: 0;
+    border-right: 50vw solid transparent;
+    border-bottom: 13.9vw solid #878dbe;
+    margin-top: -13.9vw;
+  }
+  
+   .topnav {
+    overflow: hidden;
+    background-color: #161c46;
+  }
+  /* lingid ülemise riba jaoks */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+  }
+  /* lingid hoverimisel */
+  .topnav a:hover {
+    background-color: #878dbe;
+    color: black;
+  } 
+  
+  
+  
+  .section.delta h2 {
+    color: #161c46;
+    border-bottom: 2px solid #878dbe;
+    padding-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  
+  .section.delta {
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 800px;
+    border: 1px solid #878dbe;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Sharp edges */
+  }
+  
+  
+  .section.delta ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .section.delta ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333333;
+  }
+  
+  
+  .delta.majast p {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+  
+  .delta.majast {
+    max-width: 100%;  /* Make it take the full width */
+    border: none;     /* Remove the border */
+    box-shadow: none; /* Remove the shadow */
+    background-color: transparent; /* Remove the background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 20px
+}
+  
+body.rmtk {
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /*Kaardi suurus*/
+  .card gmp-map {
+    height: 200px;
+  }
+  
+  /*headeri sätestamine*/
+  .header {
+    background-color: #878dbe;
+    text-align: left;
+    padding: 20px;
+    margin-top: 0%;
+  }
+  
+  .header.raamatukogu {
+    background-color: #878dbe;
+    background-image: url(raamatukogu.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .header.pealeht {
+    background-color: #878dbe;
+    background-image: url(peahoone.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    text-align: left
+  }
+  
+  
+  .header h1, .header.raamatukogu h1, .header.pealeht h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff
+  }
+  
+  .diag {
+    width: 0;
+    height: 0;
+    border-right: 50vw solid transparent;
+    border-bottom: 13.9vw solid #878dbe;
+    margin-top: -13.9vw;
+  }
+  
+  /*ülemise riba nupud */
+   .topnav {
+    overflow: hidden;
+    background-color: #161c46;
+  }
+  /* lingid ülemise riba jaoks */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+  }
+  /* lingid hoverimisel */
+  .topnavrmtk a:hover {
+    background-color: #878dbe;
+    color: black;
+  } 
+  
+  /* veerud */
+   .columnrmtk.left {
+    float: left;
+    width: 30%;
+    border: black;
+  }
+  
+  .columnrmtk.middle {
+    float: left;
+    width: 45%;
+    margin-left: 20px;
+  }
+  
+  .columnrmtk.middle h2 {
+    text-align: center;
+  }
+  .columnrmtk.right{
+    float: left;
+    width: 20%;
+    margin-left: 20px;
+  }
+  
+  /*kastid*/
+  .card{
+    background-color: #878dbe;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .card p {
+    font-size: 17px;
+    margin-left: 10px;
+  }
+  .card li {
+    font-size: 17px;
+  }
+  
+  .card h2 {
+    font-size:x-large;
+  }
+  
+  .card h3 {
+    font-size: large;
+  }
+  
+  .card img{
+    width: 100%;
+  }
+  
+  .rowrmtk:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* ekraani vähendamisel veerud üksteise alla, abi w3school.com-ist*/
+  @media screen and (max-width: 800px) {
+    .columnrmtk.left, .columnrmtk.middle, .columnrmtk.right {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+  .header.phy {
+    background-color: #0057a7;
+    background-image: url(füüsikum.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: left;
+    padding: 20px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+  }
+  .header.phy h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff
+  }
+  
+  .diag.phy {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-right: 50vw solid transparent; 
+    border-bottom: 13.9vw solid #0057a7; 
+    z-index: 999; 
+    margin: -13.9vw;
+  }
+
+  .diag-title {
+    position: fixed; 
+    top: 12px; 
+    left: 10px; 
+    color: white; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem; 
+    z-index: 1001; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+  }
+  .topnav.phy {
+    position: fixed; 
+    top: 80px; 
+    left: 0;
+    width: 100%; 
+    z-index: 1001; 
+    overflow: hidden;
+    background-color: #161c46;
+  }
+
+  .topnav.phy a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+  }
+  
+  .topnav.phy a:hover {
+    background-color: #878dbe;
+    color: black;
+  } 
+
+.picture {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: block; 
+    max-width: 60%; 
+    height: auto; 
+    margin: 0 auto; 
+  }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    flex: 1;
+    padding: 0 10px;
+}
+
+.link {
+    color: #3498db;
+    text-decoration: none; 
+}
+
+
+
+.sidebar {
+    position: fixed;           
+    top: 130px;               
+    left: 0;
+    width: 200px;          
+    height: calc(100vh - 130px); 
+    background-color: #333;    
+    padding-top: 20px;       
+    color: white;             
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;     
+    justify-content: center;  
+    padding: 10px;
+    height: 50px;           
+    border-bottom: 1px solid #444; 
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;              
+    text-align: center;       
+    line-height: 30px;       
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757; 
+}
+
+.sidebar ul li a:hover {
+    cursor: pointer;         
+}
+
+
+main {
+    margin-left: 220px;       
+    padding: 20px;
+    padding-top: 156px;         
+    overflow: auto;            
+}
+
+
+section.phy {
+    padding: 20px;
+    margin-bottom: 130px;       
+    background-color: #f4f4f4; 
+    border-radius: 8px;        
+    position: relative;
+    padding-top: 150px; 
+    margin-top: -150px; 
+}
+
+
+.centered-image {
+    max-width: 80%;           
+    height: auto;             
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.kaartid {
+    background-color: #f8faff;
+    border: 1px solid #cfe2f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kaartid h2 {
+    font-size: 26px;
+    color: #0057a7;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.kaart {
+    background-color: #ffffff;
+    border: 1px solid #dbe3eb;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.kaart h3 {
+    font-size: 20px;
+    color: #0057a7;
+    margin-bottom: 10px;
+}
+
+.kaart p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.bussi-numbrid {
+    color: #0057a7;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px 6px;
+    background-color: #e6f0ff;
+    border-radius: 5px;
+}
