@@ -1,26 +1,42 @@
-body {
+body.rmtk {
   background-color: #ffffff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-gmp-map {
+/*Kaardi suurus*/
+.card gmp-map {
   height: 200px;
 }
 
+/*headeri sätestamine*/
 .header {
   background-color: #878dbe;
   text-align: left;
   padding: 20px;
+  margin-top: 0%;
 }
+
 .header.raamatukogu {
   background-color: #878dbe;
   background-image: url(raamatukogu.jpg);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 100%;
   text-align: left;
   padding: 20px;
 }
-.header h1, .header.raamatukogu h1 {
+
+.header.pealeht {
+  background-color: #878dbe;
+  background-image: url(peahoone.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+  text-align: left
+}
+
+
+.header h1, .header.raamatukogu h1, .header.pealeht h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color:#ffffff
 }
@@ -33,6 +49,7 @@ gmp-map {
   margin-top: -13.9vw;
 }
 
+/*ülemise riba nupud */
  .topnav {
   overflow: hidden;
   background-color: #161c46;
@@ -49,39 +66,34 @@ gmp-map {
   text-decoration: none;
 }
 /* lingid hoverimisel */
-.topnav a:hover {
+.topnavrmtk a:hover {
   background-color: #878dbe;
   color: black;
 } 
 
 /* veerud */
- .column.left {
+ .columnrmtk.left {
   float: left;
   width: 30%;
   border: black;
 }
-.fakekaart {
-  background-color: #210447;
-  width: auto;
-  padding: 20px;
-  color: #ffffff;
-}
 
-.column.middle {
+.columnrmtk.middle {
   float: left;
   width: 45%;
   margin-left: 20px;
 }
 
-.column.middle h2 {
+.columnrmtk.middle h2 {
   text-align: center;
 }
-.column.right{
+.columnrmtk.right{
   float: left;
   width: 20%;
   margin-left: 20px;
 }
 
+/*kastid*/
 .card{
   background-color: #878dbe;
   padding: 10px;
@@ -96,16 +108,27 @@ gmp-map {
   font-size: 17px;
 }
 
+.card h2 {
+  font-size:x-large;
+}
 
-.row:after {
+.card h3 {
+  font-size: large;
+}
+
+.card img{
+  width: 100%;
+}
+
+.rowrmtk:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* ekraani vähendamisel veerud üksteise alla */
+/* ekraani vähendamisel veerud üksteise alla, abi w3school.com-ist*/
 @media screen and (max-width: 800px) {
-  .column.left, .column.middle, .column.right {   
+  .columnrmtk.left, .columnrmtk.middle, .columnrmtk.right {   
     width: 100%;
     padding: 0;
   }
