@@ -7,9 +7,6 @@ body {
     line-height: 1.6;
   }
 
-.section.delta gmp-map {
-  height: 100%;
-}
   .header {
     background-color: #0057a7;
     text-align: left;
@@ -58,9 +55,11 @@ body {
     color: black;
   } 
   
+  .sectiondelta gmp-map {
+    height: 100%;
+  }
   
-  
-  .section.delta h2 {
+  .sectiondelta h2 {
     color: #161c46;
     border-bottom: 2px solid #878dbe;
     padding-bottom: 5px;
@@ -68,7 +67,7 @@ body {
   }
   
   
-  .section.delta {
+  .sectiondelta {
     margin: 20px auto;
     padding: 10px 20px;
     max-width: 800px;
@@ -79,12 +78,12 @@ body {
   }
   
   
-  .section.delta ul {
+  .sectiondelta ul {
     list-style-type: disc;
     padding-left: 20px;
   }
   
-  .section.delta ul li {
+  .sectiondelta ul li {
     font-size: 16px;
     margin: 5px 0;
     color: #333333;
